@@ -1,5 +1,7 @@
 # Hsu.NullModemEmulator
 
+[![continuous](https://github.com/seayxu/NullModemEmulator/actions/workflows/continuous.yml/badge.svg?branch=main)](https://github.com/seayxu/NullModemEmulator/actions/workflows/continuous.yml)
+
 # Getting started
 
 ## Install Nuget Package

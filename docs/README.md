@@ -1,5 +1,7 @@
 # Getting started
 
+[![continuous](https://github.com/seayxu/NullModemEmulator/actions/workflows/continuous.yml/badge.svg?branch=main)](https://github.com/seayxu/NullModemEmulator/actions/workflows/continuous.yml)
+
 ## Install Nuget Package
 - Package Manager
   ```bash

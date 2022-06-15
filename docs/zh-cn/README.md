@@ -1,5 +1,7 @@
 # 快速入门
 
+[![continuous](https://github.com/seayxu/NullModemEmulator/actions/workflows/continuous.yml/badge.svg?branch=main)](https://github.com/seayxu/NullModemEmulator/actions/workflows/continuous.yml)
+
 ## 安装 Nuget 包
 - Package Manager
   ```bash

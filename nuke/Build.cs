@@ -130,10 +130,10 @@ internal partial class Build : NukeBuild
         .Description("Upload Artifacts")
         .Executes(() =>
         {
-            Log.Information("Upload artifacts to azure...");
-            AzurePipelines
-                .UploadArtifacts("artifacts", "artifacts", ArtifactsDirectory);
-            Log.Information("Upload artifacts to azure finished.");
+            //Log.Information("Upload artifacts to azure...");
+            //AzurePipelines
+            //    .UploadArtifacts("artifacts", "artifacts", ArtifactsDirectory);
+            //Log.Information("Upload artifacts to azure finished.");
         });
 
     private Target Push => _ => _
