@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0;net461;</TargetFramework>
+    <RepositoryType>git</RepositoryType>
+    <RepositoryUrl>https://github.com/godsharp/opcsample.git</RepositoryUrl>
+    <PackageProjectUrl>https://github.com/godsharp/opcsample</PackageProjectUrl>
+    <PackageIconUrl>https://avatars3.githubusercontent.com/u/26563296</PackageIconUrl>
+    <LangVersion>latest</LangVersion>
+    <Company>GodSharp</Company>
+    <Authors>seayxu</Authors>
+    <Copyright>Copyright © GodSharp 2022</Copyright>
+    <OutputPath>$(SolutionDir)output\$(AssemblyName)</OutputPath>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <VersionSuffix></VersionSuffix>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="$(MSBuildThisFileDirectory)icon.png" Pack="true" Visible="false" PackagePath="" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <PackageReference Include="CliWrap" Version="3.4.4" />
+    <PackageReference Include="Microsoft.Win32.Registry" Version="5.0.0" />
+  </ItemGroup>
+
+</Project>
