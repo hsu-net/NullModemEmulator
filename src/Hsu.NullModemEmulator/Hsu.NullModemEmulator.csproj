@@ -4,11 +4,14 @@
     <TargetFrameworks>netstandard2.0;net461;</TargetFrameworks>
     <RepositoryType>git</RepositoryType>
     <RepositoryUrl>https://github.com/seayxu/NullModemEmulator.git</RepositoryUrl>
-    <PackageProjectUrl>https://github.com/godsharp/NullModemEmulator</PackageProjectUrl>
+    <PackageProjectUrl>https://github.com/seayxu/NullModemEmulator</PackageProjectUrl>
+    <PackageTags>com0com;vspd;virtual port;</PackageTags>
+    <PackageReleaseNotes>com0com virtual serial port wrapper for C#.</PackageReleaseNotes>
     <LangVersion>latest</LangVersion>
-    <Company>GodSharp</Company>
+    <Description>com0com virtual serial port wrapper for C#</Description>
+    <Company>Hsu</Company>
     <Authors>seayxu</Authors>
-    <Copyright>Copyright © GodSharp 2022</Copyright>
+    <Copyright>Copyright © Hsu 2022</Copyright>
     <OutputPath>$(SolutionDir)output\$(AssemblyName)</OutputPath>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
     <VersionPrefix>2022.206.16.0</VersionPrefix>
