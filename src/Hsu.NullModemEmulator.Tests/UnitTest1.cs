@@ -46,7 +46,9 @@ public class UnitTest1
         var list = await manager.ListFriendlyNameAsync();
         foreach (var item in list)
         {
-            Console.WriteLine(item);
+            Console.WriteLine(item.Bus.FriendlyName);
+            Console.WriteLine(item.A.FriendlyName);
+            Console.WriteLine(item.B.FriendlyName);
         }
     }
 
@@ -61,8 +63,6 @@ public class UnitTest1
     public async Task AddPairAsyncTest()
     {
         NullModemEmulatorManager manager = new();
-        PortBuilder builder = new();
-        builder.PortName("COM7");
         var ret = await manager.AddPairAsync(
             new PortBuilder()
             .PortName("COM7")
@@ -72,6 +72,20 @@ public class UnitTest1
             .PortName("COM8")
             .EmulateBaudRate(true)
         );
+        Assert.IsTrue(ret);
+    }
+
+    [TestMethod]
+    public async Task ChangeAsyncTest()
+    {
+        NullModemEmulatorManager manager = new();
+var ret = await manager.ChangeAsync(
+    1,
+    PortBusOrder.A,
+    new PortBuilder()
+    .PortName("COM7")
+    .EmulateBaudRate(true)
+);
         Assert.IsTrue(ret);
     }
 

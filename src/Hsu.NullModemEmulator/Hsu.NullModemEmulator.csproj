@@ -1,17 +1,17 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netstandard2.0;net461;</TargetFramework>
+    <TargetFrameworks>netstandard2.0;net461;</TargetFrameworks>
     <RepositoryType>git</RepositoryType>
-    <RepositoryUrl>https://github.com/godsharp/opcsample.git</RepositoryUrl>
-    <PackageProjectUrl>https://github.com/godsharp/opcsample</PackageProjectUrl>
-    <PackageIconUrl>https://avatars3.githubusercontent.com/u/26563296</PackageIconUrl>
+    <RepositoryUrl>https://github.com/seayxu/NullModemEmulator.git</RepositoryUrl>
+    <PackageProjectUrl>https://github.com/godsharp/NullModemEmulator</PackageProjectUrl>
     <LangVersion>latest</LangVersion>
     <Company>GodSharp</Company>
     <Authors>seayxu</Authors>
     <Copyright>Copyright © GodSharp 2022</Copyright>
     <OutputPath>$(SolutionDir)output\$(AssemblyName)</OutputPath>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <VersionPrefix>2022.206.16.0</VersionPrefix>
     <VersionSuffix></VersionSuffix>
   </PropertyGroup>
   <ItemGroup>

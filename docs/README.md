@@ -1,5 +1,3 @@
-# Hsu.NullModemEmulator
-
 # Getting started
 
 ## Install Nuget Package

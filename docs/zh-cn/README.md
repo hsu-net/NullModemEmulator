@@ -1,8 +1,6 @@
-# Hsu.NullModemEmulator
+# 快速入门
 
-# Getting started
-
-## Install Nuget Package
+## 安装 Nuget 包
 - Package Manager
   ```bash
   Install-Package Hsu.NullModemEmulator
@@ -17,13 +15,13 @@
   <PackageReference Include="Hsu.NullModemEmulator" Version="2022.206.16.0" />
   ```
 
-## Instance Object
+## 实例化对象
 
 ```csharp
 NullModemEmulatorManager manager = new();
 ```
 
-## List Virtual Ports
+## 列出所有虚拟串口对
 ```csharp
 var list = await manager.ListAsync();
 foreach (var item in list)
@@ -34,7 +32,7 @@ foreach (var item in list)
 }
 ```
 
-## Add a Pair Virtual Port
+## 添加一个虚拟串口对
 ```csharp
 var ret = await manager.AddPairAsync(
     new PortBuilder()
@@ -47,7 +45,7 @@ var ret = await manager.AddPairAsync(
 );
 ```
 
-## Change Virtual Port Paramters
+## 改变虚拟串口参数
 ```csharp
 var ret = await manager.ChangeAsync(
     1,
@@ -58,17 +56,17 @@ var ret = await manager.ChangeAsync(
 );
 ```
 
-## Remove a Pair Virtual Port
+## 移除一个虚拟串口对
 ```csharp
 var ret = await manager.RemoveAsync(1);
 ```
 
-## Remove All Virtual Ports
+## 移除所有虚拟串口对
 ```csharp
 var ret = await manager.RemoveAllAsync();
 ```
 
-## List Friendly Name
+## 列出虚拟串口的友好名称
 ```csharp
 var list = await manager.ListFriendlyNameAsync();
 foreach (var item in list)
