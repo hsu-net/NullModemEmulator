@@ -65,15 +65,6 @@ internal partial class Build : NukeBuild
         .OnlyWhenStatic(() => IsServerBuild)
         .Executes(() =>
         {
-            AbsolutePath x86 = (AbsolutePath)Environment.GetFolderPath(Environment.SpecialFolder.SystemX86);
-            x86 /= "regsvr32.exe";
-            AbsolutePath x64 = (AbsolutePath)Environment.GetFolderPath(Environment.SpecialFolder.System);
-            x64 /= "regsvr32.exe";
-
-            ProcessTasks.StartProcess(x64, $"/s {RootDirectory / "tools" / "graybox" / "x64" / "gbda_aut.dll"}");
-            ProcessTasks.StartProcess(x86, $"/s {RootDirectory / "tools" / "graybox" / "x86" / "gbda_aut.dll"}");
-            ProcessTasks.StartProcess(x86, $"/s {RootDirectory / "tools" / "OPCDAAuto.dll"}");
-            ProcessTasks.StartProcess(x86, $"/s {RootDirectory / "tools" / "kepopcdaauto.dll"}");
         });
 
     private Target Clean => _ => _
