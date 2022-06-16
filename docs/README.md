@@ -2,6 +2,20 @@
 
 [![continuous](https://github.com/seayxu/NullModemEmulator/actions/workflows/continuous.yml/badge.svg?branch=main)](https://github.com/seayxu/NullModemEmulator/actions/workflows/continuous.yml)
 
+# Package Version
+|Version|NuGet|MyGet|
+|---|---|---|
+|Stable|[![NuGet](https://img.shields.io/nuget/v/Hsu.NullModemEmulator?style=flat-square)](https://www.nuget.org/packages/Hsu.NullModemEmulator) | [![MyGet](https://img.shields.io/myget/godsharp/v/Hsu.NullModemEmulator?style=flat-square&label=myget)](https://www.myget.org/feed/godsharp/package/nuget/Hsu.NullModemEmulator) |
+|Preview|[![NuGet](https://img.shields.io/nuget/vpre/Hsu.NullModemEmulator?style=flat-square)](https://www.nuget.org/packages/Hsu.NullModemEmulator) | [![MyGet](https://img.shields.io/myget/godsharp/vpre/Hsu.NullModemEmulator?style=flat-square&label=myget)](https://www.myget.org/feed/godsharp/package/nuget/Hsu.NullModemEmulator) |
+
+## Install com0com
+[com0com home page](https://sourceforge.net/projects/com0com/)
+>Windows 10+ need update driver with sign
+> - Window Update
+> - Setting->Windows Update->Check for Update
+> - Setting->Windows Update->Advanced Options->Optional Update
+> - Vyacheslav Frolov - CNCPorts - 10/10/2015 12:00:00 AM - 3.0.0.0
+
 ## Install Nuget Package
 - Package Manager
   ```bash

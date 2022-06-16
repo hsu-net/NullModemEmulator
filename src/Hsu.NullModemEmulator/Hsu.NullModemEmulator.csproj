@@ -5,7 +5,7 @@
     <RepositoryType>git</RepositoryType>
     <RepositoryUrl>https://github.com/seayxu/NullModemEmulator.git</RepositoryUrl>
     <PackageProjectUrl>https://github.com/seayxu/NullModemEmulator</PackageProjectUrl>
-    <PackageTags>com0com;vspd;virtual port;</PackageTags>
+    <PackageTags>com0com;Null-modem-emulator;vspd;virtual port;</PackageTags>
     <PackageReleaseNotes>com0com virtual serial port wrapper for C#.</PackageReleaseNotes>
     <LangVersion>latest</LangVersion>
     <Description>com0com virtual serial port wrapper for C#</Description>
@@ -14,11 +14,12 @@
     <Copyright>Copyright © Hsu 2022</Copyright>
     <OutputPath>$(SolutionDir)output\$(AssemblyName)</OutputPath>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <VersionPrefix>2022.206.16.0</VersionPrefix>
     <VersionSuffix></VersionSuffix>
   </PropertyGroup>
   <ItemGroup>
-    <None Include="$(MSBuildThisFileDirectory)icon.png" Pack="true" Visible="false" PackagePath="" />
+    <None Include="$(MSBuildThisFileDirectory)..\..\icon.png" Pack="true" Visible="false" PackagePath="" />
   </ItemGroup>
   
   <ItemGroup>
